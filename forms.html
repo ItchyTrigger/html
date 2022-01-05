@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms Demo</title>
+</head>
+
+<body>
+    <h1>Forms Demo</h1>
+
+    <button>Outside the form</button>
+
+    <form action="/tacos">
+        <button type="button">Please don't submit the form</button>
+        <div>
+            <label for="username">Enter your username:</label>
+            <input type="text" placeholder="username" id="username" name="username">
+        </div>
+        <div>
+            <label for="password">Enter your password:</label>
+            <input type="password" placeholder="password" id="password" name="password">
+        </div>
+        <button type="submit">In the middle</button>
+        <div>
+            <label for="color">Chose a color:</label>
+            <input type="color" id="color" name="color">
+        </div>
+        <div>
+            <label>Enter the number:
+                <input type="number" placeholder="enter a number" name="num">
+            </label>
+        </div>
+        <button>Submit!!!</button>
+        <input type="submit" value="Click Me!">
+    </form>
+
+</body>
+
+</html>
