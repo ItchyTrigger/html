@@ -88,6 +88,17 @@
         <textarea name="password" id="pass" cols="30" rows="10" placeholder="Enter your password here ..."></textarea>
         <button>submit</button>
     </form>
+    <h2>Validations Demo</h2>
+    <form action="/valid">
+        <label for="first">First Name:</label>
+        <input type="text" name="first_name" id="first" required>
+        <label for="user">Username:</label>
+        <input type="text" name="username" id="user" minlength="5" maxlength="20" required>
+        <div>
+            <input type="email" required name="mail">
+        </div>
+        <button>Submit</button>
+    </form>
 </body>
 
 </html>
