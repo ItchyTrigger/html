@@ -13,7 +13,7 @@
 
     <button>Outside the form</button>
 
-    <form action="/tacos">
+    <form action="https://www.google.com/search">
         <button type="button">Please don't submit the form</button>
         <div>
             <label for="username">Enter your username:</label>
@@ -35,8 +35,59 @@
         </div>
         <button>Submit!!!</button>
         <input type="submit" value="Click Me!">
+        <H2>Hijacking Searches</H2>
+        <hr>
+        <h3>Search Google</h3>
+        <div>
+            <label for="google">Google Search:</label>
+            <input type="text" name="q" id="google">
+        </div>
+    </form>
+    <h3>Search Reddit</h3>
+    <form action="https://www.reddit.com/search">
+        <div>
+            <label for="reddit">Reddit Search</label>
+            <input type="text" name="q" id="reddit">
+        </div>
+        <button>Search</button>
+    </form>
+    <h3>Search YouTube</h3>
+    <form action="https://www.youtube.com/results">
+        <div>
+            <label for="youtube">Search YouTube</label>
+            <input type="text" name="search_query" id="youtube">
+        </div>
+        <button>Search</button>
     </form>
 
+    <h2>More Inputs!</h2>
+    <form action="/birds">
+        <input type="checkbox" name="agree" id="agree" checked>
+        <label for="agree">Agree to the terms</label>
+        <div>
+            <label for="s">Small:</label>
+            <input type="radio" name="size" id="s" value="small">
+            <label for="m">Medium:</label>
+            <input type="radio" name="size" id="m" value="medium">
+            <label for="l">Large:</label>
+            <input type="radio" name="size" id="l" value="large">
+        </div>
+        <div>
+            <label for="meal">Please select a meal:</label>
+            <select name="meal" id="meal">
+                <option value="">Please choose an option</option>
+                <option value="meat">meat</option>
+                <option value="fish">fish</option>
+                <option value="vegtable">vagtable</option>
+            </select>
+        </div>
+        <div>
+            <label for="chesse">Amount of cheese:</label>
+            <input type="range" id="cheese" min="1" max="100" value="75" name="cheese">
+        </div>
+        <textarea name="password" id="pass" cols="30" rows="10" placeholder="Enter your password here ..."></textarea>
+        <button>submit</button>
+    </form>
 </body>
 
 </html>
